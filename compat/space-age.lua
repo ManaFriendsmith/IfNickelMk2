@@ -137,6 +137,12 @@ if data.raw.item["nitinol-plate"] then
     rm.AddIngredient("heating-tower", "self-regulating-valve", 5)
 end
 
+if mods["ThemTharHillsMk2"] then
+    rm.AddProduct("brain-galactification", {type="item", name="mutagenic-sludge", amount=4, probability=0.01})
+else
+    rm.AddProduct("brain-galactification", {type="item", name="mutagenic-sludge", amount=1, probability=0.04})
+end
+
 --FULGORA
 
 tm.AddUnlock("recycling", "invar-separation")
